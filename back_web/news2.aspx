@@ -111,10 +111,8 @@
                           <Columns>
                               <asp:ButtonField ButtonType="Image" CommandName="选择" HeaderText="选择" ImageUrl="webfonts/1.jpg" Text="按钮" />
                               <asp:BoundField DataField="Id" HeaderText="ID" />
-                              <asp:BoundField DataField="类别" HeaderText="类别" />
                               <asp:BoundField DataField="标题" HeaderText="标题" />
                               <asp:BoundField DataField="内容" HeaderText="内容" />
-                              <asp:BoundField DataField="图片" HeaderText="图片" />
                               <asp:BoundField DataField="时间" HeaderText="时间" />
                               <asp:ButtonField ButtonType="Image" CommandName="删除" HeaderText="删除记录" ImageUrl="webfonts/timg (6).jpg" Text="按钮" />
                           </Columns>
