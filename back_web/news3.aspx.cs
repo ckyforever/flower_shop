@@ -38,10 +38,10 @@ namespace cky_flower.back_web
             if (e.CommandName == "选择")
             {
                 GridViewRow row = GridView1.Rows[index];
-                ID.Text = row.Cells[1].Text;
-                标题.Text = row.Cells[2].Text;
-                招聘内容.Text = row.Cells[3].Text;
-                时间.Text = row.Cells[4].Text;
+                ID.Text = row.Cells[0].Text;
+                标题.Text = row.Cells[1].Text;
+                内容.Text = row.Cells[2].Text;
+                时间.Text = row.Cells[3].Text;
             }
             if (e.CommandName == "删除")
             {
@@ -52,9 +52,9 @@ namespace cky_flower.back_web
         protected void add_Click1(object sender, EventArgs e)
         {
             datamysql me = new datamysql();
-            string strsql = "insert into 陈凯宇_news3(Id,标题,招聘内容,时间) values('" + ID.Text + "'";
+            string strsql = "insert into 陈凯宇_news3(Id,标题,内容,时间) values('" + ID.Text + "'";
             strsql = strsql + ",'" + 标题.Text + "'";
-            strsql = strsql + ",'" + 招聘内容.Text + "'";
+            strsql = strsql + ",'" + 内容.Text + "'";
             strsql = strsql + ",'" + 时间.Text + "'";
             strsql = strsql + ")";
             me.ExecuteSql(strsql);
@@ -66,7 +66,7 @@ namespace cky_flower.back_web
             datamysql me = new datamysql();
             string strsql = "update 陈凯宇_news3 set  ";
             strsql = strsql + ",标题='" + 标题.Text + "'";
-            strsql = strsql + ",内容='" + 招聘内容.Text + "'";
+            strsql = strsql + ",内容='" + 内容.Text + "'";
             strsql = strsql + ",时间='" + 时间.Text + "'";
 
             strsql = strsql + " where Id='" + ID.Text + "'";
