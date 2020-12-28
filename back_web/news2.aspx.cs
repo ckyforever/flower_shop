@@ -38,11 +38,10 @@ namespace cky_flower.back_web
             if (e.CommandName == "选择")
             {
                 GridViewRow row = GridView1.Rows[index];
-                ID.Text = row.Cells[1].Text;
-                类别.Text = row.Cells[2].Text;
-                标题.Text = row.Cells[3].Text;
-                内容.Text = row.Cells[4].Text;
-                时间.Text = row.Cells[6].Text;
+                ID.Text = row.Cells[0].Text;
+                标题.Text = row.Cells[1].Text;
+                内容.Text = row.Cells[2].Text;
+                时间.Text = row.Cells[3].Text;
             }
             if (e.CommandName == "删除")
             {
@@ -54,7 +53,6 @@ namespace cky_flower.back_web
         {
             datamysql me = new datamysql();
             string strsql = "insert into 陈凯宇_news2(Id,类别,标题,内容,时间) values('" + ID.Text + "'";
-            strsql = strsql + ",'" + 类别.Text + "'";
             strsql = strsql + ",'" + 标题.Text + "'";
 
             strsql = strsql + ",'" + 内容.Text + "'";
@@ -68,7 +66,6 @@ namespace cky_flower.back_web
         {
             datamysql me = new datamysql();
             string strsql = "update 陈凯宇_news2 set  ";
-            strsql = strsql + " 类别='" + 类别.Text + "'";
             strsql = strsql + ",标题='" + 标题.Text + "'";
 
             strsql = strsql + ",内容='" + 内容.Text + "'";
