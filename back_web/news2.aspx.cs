@@ -52,7 +52,7 @@ namespace cky_flower.back_web
         protected void add_Click1(object sender, EventArgs e)
         {
             datamysql me = new datamysql();
-            string strsql = "insert into 陈凯宇_news2(Id,类别,标题,内容,时间) values('" + ID.Text + "'";
+            string strsql = "insert into 陈凯宇_news2(Id,标题,内容,时间) values('" + ID.Text + "'";
             strsql = strsql + ",'" + 标题.Text + "'";
 
             strsql = strsql + ",'" + 内容.Text + "'";
