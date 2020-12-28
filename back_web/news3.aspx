@@ -112,7 +112,7 @@
                               <asp:ButtonField ButtonType="Image" CommandName="选择" HeaderText="选择" ImageUrl="webfonts/1.jpg" Text="按钮" />
                               <asp:BoundField DataField="Id" HeaderText="ID" />
                               <asp:BoundField DataField="标题" HeaderText="标题" />
-                              <asp:BoundField DataField="招聘内容" HeaderText="招聘内容" />
+                              <asp:BoundField DataField="内容" HeaderText="内容" />
                               <asp:BoundField DataField="时间" HeaderText="时间" />
                               <asp:ButtonField ButtonType="Image" CommandName="删除" HeaderText="删除记录" ImageUrl="webfonts/timg (6).jpg" Text="按钮" />
                           </Columns>
@@ -148,7 +148,7 @@
                     <br />
                     <br />
                   <tr>
-                      <asp:Label ID="Label5" runat="server" Text="招聘内容" Width="20%"></asp:Label><asp:TextBox ID="招聘内容" runat="server"></asp:TextBox><br />
+                      <asp:Label ID="Label5" runat="server" Text="内容" Width="20%"></asp:Label><asp:TextBox ID="内容" runat="server"></asp:TextBox><br />
                   </tr>
                     <br />
                     <br />
